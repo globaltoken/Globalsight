@@ -18,9 +18,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
         var response;
 
-        if (this.symbol === 'USD') {
-          response = _roundFloat((value * this.factor), 2);
-        } else if (this.symbol === 'GLT') {
+        if (this.symbol === 'GLT') {
           this.factor = 1;
           response = _roundFloat((value * this.factor), 8);        
         } else if (this.symbol === 'mGLT') {
@@ -46,11 +44,7 @@ angular.module('insight.currency').controller('CurrencyController',
       $rootScope.currency.symbol = currency;
       localStorage.setItem('insight-currency', currency);
 
-      if (currency === 'USD') {
-        Currency.get({}, function(res) {
-          $rootScope.currency.factor = $rootScope.currency.btceusd = res.data.btceusd;
-        });
-      } else if (currency === 'GLT') {
+      if (currency === 'GLT') {
         $rootScope.currency.factor = 1;
       } else if (currency === 'mGLT') {
         $rootScope.currency.factor = 1000;

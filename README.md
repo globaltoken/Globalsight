@@ -35,7 +35,7 @@ and for the front-end. This repository is for the front-end, which will install 
 
     http://localhost:3000
 
-  If *litesight* reports problems connecting to **litecoind** please check the CONFIGURATION section of 
+  If *litesight* reports problems connecting to **globaltokend** please check the CONFIGURATION section of 
   [litesight-api README](https://github.com/globaltoken/Globalsight-api/blob/master/README.md). To set the 
   environment variables run something like:
   
