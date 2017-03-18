@@ -20,13 +20,13 @@ angular.module('insight.currency').controller('CurrencyController',
 
         if (this.symbol === 'USD') {
           response = _roundFloat((value * this.factor), 2);
-        } else if (this.symbol === 'LTC') {
+        } else if (this.symbol === 'GLT') {
           this.factor = 1;
           response = _roundFloat((value * this.factor), 8);        
-        } else if (this.symbol === 'mLTC') {
+        } else if (this.symbol === 'mGLT') {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
-        } else if (this.symbol === 'uLTC') {
+        } else if (this.symbol === 'uGLT') {
           this.factor = 1000000;
           response = _roundFloat((value * this.factor), 2);
         } else {
@@ -50,11 +50,11 @@ angular.module('insight.currency').controller('CurrencyController',
         Currency.get({}, function(res) {
           $rootScope.currency.factor = $rootScope.currency.btceusd = res.data.btceusd;
         });
-      } else if (currency === 'LTC') {
+      } else if (currency === 'GLT') {
         $rootScope.currency.factor = 1;
-      } else if (currency === 'mLTC') {
+      } else if (currency === 'mGLT') {
         $rootScope.currency.factor = 1000;
-      } else if (currency === 'uLTC') {
+      } else if (currency === 'uGLT') {
         $rootScope.currency.factor = 1000000;
       } else {
         $rootScope.currency.factor = 1;

@@ -1,11 +1,11 @@
-# *Litesight*
+# *Globalsight*
 
-*Litesight* is an open-source Litecoin blockchain explorer with complete REST and websocket APIs.
-Litesight runs in NodeJS, uses AngularJS for the front-end and LevelDB for storage.
+*Globalsight* is an open-source Globaltoken blockchain explorer with complete REST and websocket APIs.
+Globalsight runs in NodeJS, uses AngularJS for the front-end and LevelDB for storage.
 
-Check some screenshots and more details at [litesight's project homepage](https://github.com/pembo210/Litesight).
+Check some screenshots and more details at [litesight's project homepage](https://github.com/globaltoken/Globalsight).
 
-*Litesight* project is now split in two repositories. One for the [API](https://github.com/pembo210/Litesight-api)
+*Globalsight* project is now split in two repositories. One for the [API](https://github.com/globaltoken/Globalsight-api)
 and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
 
 
@@ -21,7 +21,7 @@ and for the front-end. This repository is for the front-end, which will install 
 
   To install litesight, clone the main repository:
 
-    $ git clone https://github.com/pembo210/Litesight.git && cd Litesight
+    $ git clone https://github.com/globaltoken/Globalsight.git && cd Globalsight
 
   Install dependencies:
 
@@ -36,7 +36,7 @@ and for the front-end. This repository is for the front-end, which will install 
     http://localhost:3000
 
   If *litesight* reports problems connecting to **litecoind** please check the CONFIGURATION section of 
-  [litesight-api README](https://github.com/pembo210/Litesight-api/blob/master/README.md). To set the 
+  [litesight-api README](https://github.com/globaltoken/Globalsight-api/blob/master/README.md). To set the 
   environment variables run something like:
   
      $ INSIGHT_NETWORK=livenet BITCOIND_USER=user BITCOIND_PASS=pass INSIGHT_PUBLIC_PATH=public  npm start
@@ -45,7 +45,7 @@ and for the front-end. This repository is for the front-end, which will install 
   Please note that the app will need to sync its internal database
   with the blockchain state, which may take some time. You can check
   sync progress from within the web interface. More details about that process
-  on [litesight-api README](https://github.com/pembo210/Litesight-api/blob/master/README.md). 
+  on [litesight-api README](https://github.com/globaltoken/Globalsight-api/blob/master/README.md). 
   
   
 ## Nginx Setup
@@ -80,7 +80,7 @@ In case you are developing *litesight* and *litesight-api* together, you can do 
 * Install litesight and litesight-api on the same path ($IROOT)
 
 ```
-  $ cd $IROOT/Litesight
+  $ cd $IROOT/Globalsight
   $ grunt
 ```
 
@@ -88,18 +88,18 @@ in other terminal:
 
 ```
   $ cd $IROOT/litesight-api
-  $ ln -s ../Litesight/public
+  $ ln -s ../Globalsight/public
   $ INSIGHT_PUBLIC_PATH=public node insight.js 
 ```
 
 
 ``` 
-INSIGHT_PUBLIC_PATH=Litesight/public  grunt
+INSIGHT_PUBLIC_PATH=Globalsight/public  grunt
 ```
 
 at litesight-api's home path (edit the path according your setup).
 
-**also** in the Litesight-api path. (So you will have to grunt process running, one for litesight and one for litesight-api).
+**also** in the Globalsight-api path. (So you will have to grunt process running, one for litesight and one for litesight-api).
 
 
 ## Multilanguage support
@@ -131,11 +131,11 @@ compile***.
 
 ## Note
 
-For more details about the *litesight-api* configs and end-point, just go to [litesight-api github repository](https://github.com/pembo210/litesight-api) or read the [documentation](https://github.com/pembo210/Litesight-api/blob/master/README.md)
+For more details about the *litesight-api* configs and end-point, just go to [litesight-api github repository](https://github.com/globaltoken/litesight-api) or read the [documentation](https://github.com/globaltoken/Globalsight-api/blob/master/README.md)
 
 ## Contribute
 
-Contributions and suggestions are welcomed at [litesight github repository](https://github.com/pembo210/Litesight).
+Contributions and suggestions are welcomed at [litesight github repository](https://github.com/globaltoken/Globalsight).
 
 
 ## License

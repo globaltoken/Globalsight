@@ -5,7 +5,7 @@ angular.module('insight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: '/views/block.html',
-      title: 'Litecoin Block '
+      title: 'Globaltoken Block '
     }).
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
@@ -13,7 +13,7 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: '/views/transaction.html',
-      title: 'Litecoin Transaction '
+      title: 'Globaltoken Transaction '
     }).
     when('/', {
       templateUrl: '/views/index.html',
@@ -21,15 +21,15 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/blocks', {
       templateUrl: '/views/block_list.html',
-      title: 'Litecoin Blocks solved Today'
+      title: 'Globaltoken Blocks solved Today'
     }).
     when('/blocks-date/:blockDate/:startTimestamp?', {
       templateUrl: '/views/block_list.html',
-      title: 'Litecoin Blocks solved '
+      title: 'Globaltoken Blocks solved '
     }).
     when('/address/:addrStr', {
       templateUrl: '/views/address.html',
-      title: 'Litecoin Address '
+      title: 'Globaltoken Address '
     }).
     when('/status', {
       templateUrl: '/views/status.html',
