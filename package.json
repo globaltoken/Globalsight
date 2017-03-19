@@ -1,5 +1,5 @@
 {
-  "name": "Globalsight-Globaltokencore",
+  "name": "Globalsight-bitcore",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the globaltoken network and build your own services with it.",
   "version": "0.2.7",
   "repository": "git://github.com/globaltoken/Globalsight.git",
