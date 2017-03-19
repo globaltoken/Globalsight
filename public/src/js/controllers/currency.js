@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('insight.currency').controller('CurrencyController',
+angular.module('Globalsight.currency').controller('CurrencyController',
   function($scope, $rootScope, Currency) {
     $rootScope.currency.symbol = defaultCurrency;
 
@@ -18,13 +18,12 @@ angular.module('insight.currency').controller('CurrencyController',
 
         var response;
 
-        if (this.symbol === 'GLT') {
-          this.factor = 1;
-          response = _roundFloat((value * this.factor), 8);        
+        if (this.symbol === 'USD') {
+          response = _roundFloat((value * this.factor), 2);
         } else if (this.symbol === 'mGLT') {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
-        } else if (this.symbol === 'uGLT') {
+        } else if (this.symbol === 'bits') {
           this.factor = 1000000;
           response = _roundFloat((value * this.factor), 2);
         } else {
@@ -42,13 +41,15 @@ angular.module('insight.currency').controller('CurrencyController',
 
     $scope.setCurrency = function(currency) {
       $rootScope.currency.symbol = currency;
-      localStorage.setItem('insight-currency', currency);
+      localStorage.setItem('Globalsight-currency', currency);
 
-      if (currency === 'GLT') {
-        $rootScope.currency.factor = 1;
+      if (currency === 'USD') {
+        Currency.get({}, function(res) {
+          $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
+        });
       } else if (currency === 'mGLT') {
         $rootScope.currency.factor = 1000;
-      } else if (currency === 'uGLT') {
+      } else if (currency === 'bits') {
         $rootScope.currency.factor = 1000000;
       } else {
         $rootScope.currency.factor = 1;
@@ -57,7 +58,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
     // Get initial value
     Currency.get({}, function(res) {
-      $rootScope.currency.factor = $rootScope.currency.btceusd = res.data.btceusd;
+      $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
     });
 
   });

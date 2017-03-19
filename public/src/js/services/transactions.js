@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('insight.transactions')
+angular.module('Globalsight.transactions')
   .factory('Transaction',
     function($resource) {
     return $resource('/api/tx/:txId', {

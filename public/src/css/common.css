@@ -148,7 +148,7 @@ margin-left: 0;
   cursor: pointer;
 }
 
-.insight {
+.Globalsight {
   font-family: 'Ubuntu', sans-serif;
   font-size: 34px;
   font-style: italic;
@@ -396,34 +396,34 @@ margin-left: 0;
   overflow: hidden;
 }
 
-#footer a.insight {
+#footer a.Globalsight {
   font-size: 20px;
   text-decoration: none;
   color: #fff;
 }
 
-#footer a.insight:hover {
+#footer a.Globalsight:hover {
   color: #fffffe;
 }
 
-#footer a.insight small { font-size: 11px; }
+#footer a.Globalsight small { font-size: 11px; }
 .line-footer { border-top: 2px dashed #ccc; }
 
-#footer .languages {
+#footer .links {
   color: #ddd;
   font-size: 10px;
 }
 
-#footer .languages a {
+#footer .links a {
   color: #ddd;
 }
 
-#footer .languages a.selected {
+#footer .links a.selected {
   color: #eee;
   font-weight: bold;
 }
 
-#footer .languages a:hover {
+#footer .links a:hover {
   text-decoration: none;
   color: #fffffe;
 }
@@ -613,7 +613,7 @@ margin-left: 0;
   float: left;
   height: 45px;
 }
-#powered a.bitcore {
+#powered a.Globaltokencore {
   background-image: url('/img/logo.svg');
   background-size: 80px;
   width: 30%;
@@ -753,7 +753,7 @@ a.v_highlight_more {
   h3 {
     font-size: 18px;
   }
-  .insight {
+  .Globalsight {
     font-size: 30px;
   }
   .navbar-default .navbar-nav>li>a {
@@ -787,7 +787,7 @@ a.v_highlight_more {
   .navbar-default .navbar-brand {
     padding: 15px;
   }
-  .insight {
+  .Globalsight {
     font-size: 26px;
   }
   .navbar-nav>li>a {

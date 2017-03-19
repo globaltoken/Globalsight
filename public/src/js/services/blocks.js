@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('insight.blocks')
+angular.module('Globalsight.blocks')
   .factory('Block',
     function($resource) {
     return $resource('/api/block/:blockHash', {

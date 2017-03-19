@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('insight.currency').factory('Currency',
+angular.module('Globalsight.currency').factory('Currency',
   function($resource) {
     return $resource('/api/currency');
 });

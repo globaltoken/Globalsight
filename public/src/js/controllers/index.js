@@ -3,7 +3,7 @@
 var TRANSACTION_DISPLAYED = 10;
 var BLOCKS_DISPLAYED = 5;
 
-angular.module('insight.system').controller('IndexController',
+angular.module('Globalsight.system').controller('IndexController',
   function($scope, Global, getSocket, Blocks) {
     $scope.global = Global;
 

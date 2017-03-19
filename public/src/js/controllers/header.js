@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('insight.system').controller('HeaderController',
+angular.module('Globalsight.system').controller('HeaderController',
   function($scope, $rootScope, $modal, getSocket, Global, Block) {
     $scope.global = Global;
 
     $rootScope.currency = {
       factor: 1,
-      btceusd: 0,
+      bitstamp: 0,
       symbol: 'GLT'
     };
 
@@ -16,9 +16,6 @@ angular.module('insight.system').controller('HeaderController',
     }, {
       'title': 'Status',
       'link': 'status'
-        }, {
-      'title': 'API',
-      'link': 'api'
     }];
 
     $scope.openScannerModal = function() {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('insight.address').controller('AddressController',
+angular.module('Globalsight.address').controller('AddressController',
   function($scope, $rootScope, $routeParams, $location, Global, Address, getSocket) {
     $scope.global = Global;
 

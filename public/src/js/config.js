@@ -1,7 +1,7 @@
 'use strict';
 
 //Setting up route
-angular.module('insight').config(function($routeProvider) {
+angular.module('Globalsight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: '/views/block.html',
@@ -10,6 +10,10 @@ angular.module('insight').config(function($routeProvider) {
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
       templateUrl: '/views/redirect.html'
+    }).
+    when('/tx/send', {
+      templateUrl: '/views/transaction_sendraw.html',
+      title: 'Broadcast Raw Transaction'
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: '/views/transaction.html',
@@ -35,9 +39,9 @@ angular.module('insight').config(function($routeProvider) {
       templateUrl: '/views/status.html',
       title: 'Status'
     }).
-    when('/api', {
-      templateUrl: '/views/api.html',
-      title: 'API Quickstart'
+    when('/messages/verify', {
+      templateUrl: '/views/messages_verify.html',
+      title: 'Verify Message'
     })
     .otherwise({
       templateUrl: '/views/404.html',
@@ -46,7 +50,7 @@ angular.module('insight').config(function($routeProvider) {
 });
 
 //Setting HTML5 Location Mode
-angular.module('insight')
+angular.module('Globalsight')
   .config(function($locationProvider) {
     $locationProvider.html5Mode(true);
     $locationProvider.hashPrefix('!');

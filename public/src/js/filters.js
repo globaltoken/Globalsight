@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('insight')
+angular.module('Globalsight')
   .filter('startFrom', function() {
     return function(input, start) {
       start = +start; //parse to int

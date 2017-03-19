@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('insight.status')
+angular.module('Globalsight.status')
   .factory('Status',
     function($resource) {
       return $resource('/api/status', {

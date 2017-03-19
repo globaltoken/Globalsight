@@ -1,24 +1,28 @@
 {
-  "name": "Globalsight",
-  "description": "An open-source frontend for the Globalsight API. The Globalsight API provides you with a convenient, powerful and simple way to query and broadcast data on the Globaltoken network and build your own services with it.",
-  "version": "0.2.5",
-  "author": {
-    "name": "pembo210",
-    "email": "pembo210@gmail.com"
-  },
+  "name": "Globalsight-Globaltokencore",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the globaltoken network and build your own services with it.",
+  "version": "0.2.7",
   "repository": "git://github.com/globaltoken/Globalsight.git",
   "contributors": [
     {
-      "name": "SS",
-      "email": "flappy@flappycoin.io"
+      "name": "Matias Alejo Garcia",
+      "email": "ematiu@gmail.com"
     },
-   {
-      "name": "pembo210",
-      "email": "pembo210@gmail.com"
+    {
+      "name": "Manuel Araoz",
+      "email": "manuelaraoz@gmail.com"
     },
-	{
-      "name": "globaltokendevteam",
-      "email": "admin@globaltoken.org"
+    {
+      "name": "Mario Colque",
+      "email": "colquemario@gmail.com"
+    },
+    {
+      "name": "Gustavo Cortez",
+      "email": "cmgustavo83@gmail.com"
+    },
+    {
+      "name": "Juan Ignacio Sosa Lopez",
+      "email": "bechilandia@gmail.com"
     }
   ],
   "bugs": {
@@ -27,11 +31,11 @@
   "homepage": "https://github.com/globaltoken/Globalsight",
   "license": "MIT",
   "keywords": [
-    "insight",
+    "Globalsight",
     "blockchain",
     "blockexplorer",
     "globaltoken",
-    "bitcore",
+    "Globaltokencore",
     "front-end"
   ],
   "scripts": {

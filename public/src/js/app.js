@@ -1,9 +1,9 @@
 'use strict';
 
-var defaultLanguage = localStorage.getItem('insight-language') || 'en';
-var defaultCurrency = localStorage.getItem('insight-currency') || 'GLT';
+var defaultLanguage = localStorage.getItem('Globalsight-language') || 'en';
+var defaultCurrency = localStorage.getItem('Globalsight-currency') || 'GLT';
 
-angular.module('insight',[
+angular.module('Globalsight',[
   'ngAnimate',
   'ngResource',
   'ngRoute',
@@ -13,23 +13,25 @@ angular.module('insight',[
   'monospaced.qrcode',
   'gettext',
   'angularMoment',
-  'insight.system',
-  'insight.socket',
-  'insight.blocks',
-  'insight.transactions',
-  'insight.address',
-  'insight.search',
-  'insight.status',
-  'insight.connection',
-  'insight.currency'
+  'Globalsight.system',
+  'Globalsight.socket',
+  'Globalsight.blocks',
+  'Globalsight.transactions',
+  'Globalsight.address',
+  'Globalsight.search',
+  'Globalsight.status',
+  'Globalsight.connection',
+  'Globalsight.currency',
+  'Globalsight.messages'
 ]);
 
-angular.module('insight.system', []);
-angular.module('insight.socket', []);
-angular.module('insight.blocks', []);
-angular.module('insight.transactions', []);
-angular.module('insight.address', []);
-angular.module('insight.search', []);
-angular.module('insight.status', []);
-angular.module('insight.connection', []);
-angular.module('insight.currency', []);
+angular.module('Globalsight.system', []);
+angular.module('Globalsight.socket', []);
+angular.module('Globalsight.blocks', []);
+angular.module('Globalsight.transactions', []);
+angular.module('Globalsight.address', []);
+angular.module('Globalsight.search', []);
+angular.module('Globalsight.status', []);
+angular.module('Globalsight.connection', []);
+angular.module('Globalsight.currency', []);
+angular.module('Globalsight.messages', []);

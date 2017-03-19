@@ -50,7 +50,7 @@ ScopedSocket.prototype.emit = function(event, data, callback) {
   });
 };
 
-angular.module('insight.socket').factory('getSocket',
+angular.module('Globalsight.socket').factory('getSocket',
   function($rootScope) {
     var socket = io.connect(null, {
       'reconnect': true,

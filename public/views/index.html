@@ -52,26 +52,23 @@
             <td>
               <a class="ellipsis" href="/tx/{{tx.txid}}">{{tx.txid}}</a>
             </td>
-            <td class="text-right"><span class="ellipsis">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut }}</span></td>
+            <td class="text-right"><span class="ellipsis">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut + ' GLT'}}</span></td>
           </tr>
           </tbody>
         </table>
 
       </div>
 
-      <div class="col-xs-12 col-md-4 col-gray" align="center">
-        <img src="img/globaltoken-logo-135x135.png"><br>
-        <p>Globaltoken is a peer-to-peer Internet currency that enables instant, near-zero cost payments to anyone in the world. Globaltoken is an open source, global payment network that is fully decentralized. Mathematics secures the network and empowers individuals to control their own finances.</p>
+      <div class="col-xs-12 col-md-4 col-gray">
+        <h2 translate>About</h2>
+        <p translate><strong>Globalsight</strong>  is an <a href="http://live.Globalsight.is/"
+          target="_blank">open-source Globaltoken blockchain explorer</a> with complete REST and websocket APIs that can be used for writing web wallets and other apps  that need more advanced blockchain queries than provided by bitcoind RPC.  Check out the <a href="http://github.com/globaltoken/Globalsight" target="_blank">source code</a>.</p>
+        <p translate><strong>Globalsight</strong> is still in development, so be sure to report any bugs and provide feedback for improvement at our <a href="https://github.com/globaltoken/Globalsight/issues" target="_blank">github issue tracker</a>.</p>
         <div id="powered" class="row">
           <div class="powered-text">
             <small class="text-muted" translate>Powered by</small>
-          </div></div>
-        <p translate><strong>insight</strong>  is an <a href="http://live.insight.is/"
-          target="_blank">open-source Bitcoin blockchain explorer</a> with complete REST and websocket APIs that can be used for writing web wallets and other apps  that need more advanced blockchain queries than provided by bitcoind RPC.  Check out the <a href="http://github.com/bitpay/insight" target="_blank">source code</a>.</p>
-        <p translate><strong>insight</strong> is still in development, so be sure to report any bugs and provide feedback for improvement at our <a href="https://github.com/bitpay/insight/issues" target="_blank">github issue tracker</a>.</p>
-        <div id="powered" class="row">
-
-          <a href="http://bitcore.io" target="_blank" class="bitcore" title="Bitcore"></a>
+          </div>
+          <a href="http://Globaltokencore.io" target="_blank" class="Globaltokencore" title="Globaltokencore"></a>
           <a href="http://angularjs.org" target="_blank" class="angularjs" title="AngularJS"></a>
           <a href="https://code.google.com/p/leveldb/" target="_blank" class="leveldb" title="LevelDB"></a>
           <a href="http://nodejs.org" target="_blank" class="nodejs" title="NodeJs"></a>
