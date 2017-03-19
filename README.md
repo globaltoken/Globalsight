@@ -88,7 +88,7 @@ in other terminal:
 ```
   $ cd $IROOT/Globalsight-api 
   $ ln -s ../Globalsight/public
-  $ INSIGHT_PUBLIC_PATH=public node Globalsight.js 
+  $ INSIGHT_PUBLIC_PATH=public node insight.js 
 ```
 
 
