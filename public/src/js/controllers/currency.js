@@ -18,9 +18,7 @@ angular.module('Globalsight.currency').controller('CurrencyController',
 
         var response;
 
-        if (this.symbol === 'USD') {
-          response = _roundFloat((value * this.factor), 2);
-        } else if (this.symbol === 'mGLT') {
+        if (this.symbol === 'mGLT') {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
         } else if (this.symbol === 'bits') {
@@ -43,11 +41,7 @@ angular.module('Globalsight.currency').controller('CurrencyController',
       $rootScope.currency.symbol = currency;
       localStorage.setItem('Globalsight-currency', currency);
 
-      if (currency === 'USD') {
-        Currency.get({}, function(res) {
-          $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
-        });
-      } else if (currency === 'mGLT') {
+      if (currency === 'mGLT') {
         $rootScope.currency.factor = 1000;
       } else if (currency === 'bits') {
         $rootScope.currency.factor = 1000000;
