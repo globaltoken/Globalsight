@@ -19,7 +19,7 @@ Check some screenshots and more details at [Globalsight's project homepage](http
 
   To install Insight, clone the main repository:
 
-    $ git clone https://github.com/globaltoken/Globalsight.git && cd Globalsight
+    $ git clone https://github.com/jeong760/Globalsight.git && cd Globalsight
 
   Install dependencies:
 
