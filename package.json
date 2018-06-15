@@ -52,7 +52,7 @@
     "grunt-contrib-concat": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
-    "livereload": "*",
+    "grunt-macreload": "*",
     "grunt-css": "*",
     "grunt-markdown": "*",
     "grunt-angular-gettext": "*"
