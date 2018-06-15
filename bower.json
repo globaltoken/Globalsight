@@ -10,7 +10,7 @@
     "angular-qrcode": "*",
     "angular-animate": "*",
     "momentjs": "*",
-    "zeroclipboard": *",
+    "zeroclipboard": "*",
     "ngprogress": "*",
     "angular-ui-utils": "*",
     "angular-gettext": "*",
