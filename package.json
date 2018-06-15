@@ -49,7 +49,7 @@
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-contrib-jshint": "*",
-    "grunt-contrib-concat": "*,
+    "grunt-contrib-concat": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "livereload": "*",
