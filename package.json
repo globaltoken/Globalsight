@@ -45,17 +45,16 @@
     "Globalsight-api": "git://github.com/jeong760/Globalsight-api.git"
   },
   "devDependencies": {
-    "bower": "~1.2.8",
-    "grunt": "~0.4.2",
-    "grunt-cli": "~0.1.11",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.3.2",
+    "bower": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*,
+    "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
-    "browsersync": "*",
     "livereload": "*",
-    "grunt-css": "~0.5.4",
-    "grunt-markdown": "~0.5.0",
-    "grunt-angular-gettext": "^0.2.15"
+    "grunt-css": "*",
+    "grunt-markdown": "*",
+    "grunt-angular-gettext": "*"
   }
 }
