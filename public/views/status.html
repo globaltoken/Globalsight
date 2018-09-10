@@ -146,6 +146,10 @@
             <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Mining')">{{mining.difficulty}}</td>
           </tr>
           <tr>
+            <td translate>Network Active</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Mining')">{{mining.networkactive}}</td>
+          </tr>
+          <tr>
             <td translate>Network Hashrate</td>
             <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Mining')">{{mining.networkhashps}}</td>
           </tr>
@@ -159,7 +163,7 @@
           </tr>
           <tr>
             <td translate>Info Errors</td>
-            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.infoErrors}}</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.warnings}}</td>
           </tr>
         </tbody>
       </table>
