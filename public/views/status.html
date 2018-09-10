@@ -118,44 +118,48 @@
 
     <div class="col-xs-12 col-md-4 col-gray">
       <h2 translate>Globaltoken node information</h2>
-      <table class="table" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">
+      <table class="table">
         <thead  data-ng-include src="'/views/includes/infoStatus.html'"></thead>
         <tbody>
           <tr>
             <td translate>Version</td>
-            <td class="text-right">{{info.version}}</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.version}}</td>
           </tr>
           <tr>
             <td translate>Protocol version</td>
-            <td class="text-right">{{info.protocolversion}}</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.protocolversion}}</td>
           </tr>
           <tr>
             <td translate>Blocks</td>
-            <td class="text-right"><a href="/block-index/{{info.blocks}}">{{info.blocks}}</a></td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Mining')"><a href="/block-index/{{mining.blocks}}">{{info.blocks}}</a></td>
           </tr>
           <tr>
             <td translate>Time Offset</td>
-            <td class="text-right">{{info.timeoffset}}</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.timeoffset}}</td>
           </tr>
           <tr>
             <td translate>Connections to other nodes</td>
-            <td class="text-right">{{info.connections}}</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.connections}}</td>
           </tr>
           <tr>
-           <td translate>Mining Difficulty</td>
-            <td class="text-right">{{info.difficulty}}</td>
+            <td translate>Mining Difficulty</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Mining')">{{mining.difficulty}}</td>
           </tr>
           <tr>
-            <td translate>Testnet</td>
-            <td class="text-right">{{info.testnet}}</td>
+            <td translate>Network Hashrate</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Mining')">{{mining.networkhashps}}</td>
+          </tr>
+          <tr>
+            <td translate>Networks</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Mining')">{{mining.chain}}</td>
           </tr>
           <tr>
             <td translate>Proxy setting</td>
-            <td class="text-right">{{info.proxy}}</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.networks.proxy}}</td>
           </tr>
           <tr>
             <td translate>Info Errors</td>
-            <td class="text-right">{{info.infoErrors}}</td>
+            <td class="text-right" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">{{info.infoErrors}}</td>
           </tr>
         </tbody>
       </table>
