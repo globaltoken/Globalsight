@@ -34,7 +34,10 @@
         <span data-ng-init="getStatus('Info')">
           <strong>{{'Conn'|translate}}</strong> {{info.connections}}
         </span> &middot;
-        <strong>{{'Height'|translate}}</strong> {{totalBlocks || mining.blocks}}
+        &nbsp; &middot;
+        <span data-ng-init="getStatus('MiningInfo')">
+        <strong>{{'Height'|translate}}</strong> {{totalBlocks || mininginfo.blocks}}
+        </span>
       </div>
       </li>
       <li>
