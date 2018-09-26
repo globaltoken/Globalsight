@@ -2,7 +2,6 @@
 -------------------------------------------------- */
 @charset "UTF-8";
 
-
 html,
 body {
   color: #373D42;
@@ -614,8 +613,8 @@ margin-left: 0;
   height: 45px;
 }
 #powered a.Globaltokencore {
-  background-image: url('/img/logo.svg');
-  background-size: 80px;
+  background-image: url('/img/bitcore.png');
+  background-size: 31px;
   width: 30%;
 }
 #powered a.nodejs {
