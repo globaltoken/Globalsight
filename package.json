@@ -2,7 +2,7 @@
   "name": "Globalsight-bitcore",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the globaltoken network and build your own services with it.",
   "version": "0.2.7",
-  "repository": "git://github.com/jeong760/Globalsight.git",
+  "repository": "git://github.com/globaltoken/Globalsight.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -26,9 +26,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/jeong760/Globalsight/issues"
+    "url": "https://github.com/globaltoken/Globalsight/issues"
   },
-  "homepage": "https://github.com/jeong760/Globalsight",
+  "homepage": "https://github.com/globaltoken/Globalsight",
   "license": "MIT",
   "keywords": [
     "Globalsight",
@@ -42,7 +42,7 @@
     "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/Globalsight-bitcore-api"
   },
   "dependencies": {
-    "Globalsight-api": "git://github.com/jeong760/Globalsight-api.git"
+    "Globalsight-api": "git://github.com/globaltoken/Globalsight-api.git"
  },
   "devDependencies": {
     "bower": "~1.8.3",
