@@ -110,6 +110,10 @@
             <td> <strong>Nonce</strong></td>
             <td class="text-right text-muted">{{block.nonce}}</td>
           </tr>
+          <tr>
+            <td> <strong>Algorithm</strong></td>
+            <td class="text-right text-muted">{{block.algo}}</td>
+          </tr>
           <tr data-ng-show="block.nextblockhash">
             <td><strong translate>Next Block</strong></td>
             <td class="text-right"><a href="/block/{{block.nextblockhash}}">{{block.height+1}}</a></td>
